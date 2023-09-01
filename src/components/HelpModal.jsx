@@ -27,8 +27,8 @@ const HelpModal = ({ isOpen, setIsOpen }) => {
           <div className="flex space-x-2">
             <span>&bull;</span>
             <span>
-              This is base-map and an option to draw an AOI (Area of Interest)
-              in any polygon shape.
+              This is a base-map and there is an option to draw an AOI (Area of
+              Interest) in any polygon shape.
             </span>
           </div>
           <div className="flex space-x-2 mt-4">
@@ -37,6 +37,13 @@ const HelpModal = ({ isOpen, setIsOpen }) => {
               Upon drawing any polygon, area they will be presented with all the
               tiles (pre configured satellite image&apos;s metadata) which are
               intersecting that AOI.
+            </span>
+          </div>
+          <div className="flex space-x-2 mt-4">
+            <span>&bull;</span>
+            <span>
+              To draw a new polygon, delete the current polygon using the delete
+              button.
             </span>
           </div>
           <div className="flex space-x-2 mt-4">
