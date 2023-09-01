@@ -1,8 +1,17 @@
-# React + Vite
+# Galaxeye AOI Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instructions for Execution:
+- To initiate, either clone the repository or retrieve the zip file
 
-Currently, two official plugins are available:
+### Run with Docker:
+   - In your terminal, navigate to the project directory and execute the following command `docker-compose -f docker-compose.dev.yml up`
+   - Then, the application can be accessed at [localhost:5173](http://localhost:5173/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Run without Docker:
+   - In your terminal, navigate to the project directory and execute the following command: `npm install`
+   - After all dependencies have been installed, run the following command in your terminal: `npm run dev` to access the application at [localhost:5173](http://localhost:5173/)
+
+### How area of interest work?
+   - There is a base map and an option to draw an AOI (Area of Interest) in any polygon shape
+   - Upon drawing any polygon, area they will be presented with all the tiles (pre-configured satellite image's metadata) that intersect that AOI
+   - To draw a new polygon, delete the current polygon using the delete button
